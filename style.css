@@ -379,11 +379,37 @@ li {
   opacity: 1;
 }
 
+/* === OVERRIDES PARA MÓVIL === */
 @media (max-width: 768px) {
+  /* 1) Hero deja de ocupar 100vh y se ajusta al contenido */
   .hero-simple {
-    /* Quitamos el padding inferior para no dejar espacio negro innecesario */
-    padding-bottom: 0;
-    /* Permitimos que la altura se ajuste al contenido en lugar de forzar 100vh */
-    min-height: auto;
+    min-height: auto !important;
+    padding-bottom: 0 !important;
+  }
+  .hero-content {
+    margin-bottom: 16px; /* un poco de separación antes del siguiente bloque */
+  }
+
+  /* 2) Que ninguna imagen se salga de la pantalla */
+  .img-beneficios,
+  .img-diapositiva {
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 8px; /* opcional, para suavizar bordes */
+  }
+  .diapositiva-profesionales {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
+
+/* === GRID DE CONCLUSIONES (si lo tienes) === */
+@media (max-width: 600px) {
+  .conclusiones-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
+
