@@ -358,3 +358,32 @@ li {
   z-index: -1;
   opacity: 0.25;
 }
+
+
+#form-status {
+  margin-top: 12px;
+  font-size: 1rem;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+/* verde */
+.mensaje-exito {
+  color: #00cc88;
+  opacity: 1;
+}
+
+/* rojo */
+.mensaje-error {
+  color: #ff4444;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-simple {
+    /* Quitamos el padding inferior para no dejar espacio negro innecesario */
+    padding-bottom: 0;
+    /* Permitimos que la altura se ajuste al contenido en lugar de forzar 100vh */
+    min-height: auto;
+  }
+}
