@@ -1,0 +1,360 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;  /* negro real */
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+
+
+
+.logo-container {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 20;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  padding: 6px 10px;
+  background-color: rgba(0, 0, 0, 0.3); /* fondo negro sutil */
+  border-radius: 12px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+
+
+.top-header {
+  background-color: transparent;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+.hero-simple {
+  background: transparent;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.logo {
+  height: 50px;
+  filter: brightness(120%);
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.hero-content input[type="email"] {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+  max-width: 90%;
+}
+
+.hero-content button {
+  background: linear-gradient(90deg, #1f8fff, #00d4ff);
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.5px;
+}
+
+.hero-content button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(90deg, #00d4ff, #1f8fff);
+}
+
+
+
+
+.sub-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.98);
+  border-radius: 32px;
+  max-width: 600px;
+  width: 90vw;
+  margin: 0 auto;
+  box-shadow: 0 8px 40px rgba(80,80,150,0.10);
+  padding: 48px 36px 32px 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content h1 {
+  color: #18181A;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  line-height: 1.16;
+}
+
+.hero-content form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.hero-content input[type="email"] {
+  flex: 1;
+  border: none;
+  padding: 16px 18px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  background: #f1f1f4;
+  color: #333;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: border .2s;
+}
+
+.hero-content input[type="email"]:focus {
+  border: 1.5px solid #40a9ff;
+}
+
+
+.sub-text {
+  font-size: 1.03rem;
+  color: #717182;
+  margin-top: 8px;
+  letter-spacing: 0.1px;
+}
+
+
+/* ======== SECCIONES ALTERNADAS ======== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Fondo gris suave */
+.bloque-servicios {
+  background-color: #f7f7f7;
+}
+
+
+
+/* Fondo gris claro y texto emocional */
+.frase-cierre {
+  background-color: #eeeeee;
+  font-style: italic;
+}
+
+
+/* ======== LISTAS ======== */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+li {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: #444;
+}
+
+
+
+.titulo-fondo-barra {
+  display: inline-block;
+  background: rgba(255,255,255,0.82);
+  border-radius: 0px;
+  padding: 14px 42px;
+  font-size: 2.1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #232323;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 36px rgba(50,50,50,0.08);
+}
+
+.titulo-seccion {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.3rem;
+  color: #181818;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+  background: none;
+  text-transform: uppercase;
+  position: relative;
+}
+.titulo-seccion::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #d4af37, #fffbe2, #d4af37);
+  margin: 18px auto 0;
+  border-radius: 0px;
+}
+
+.beneficios-web {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #000000; /* o #f7f8fa si prefieres un tono más suave */
+}
+
+.img-beneficios {
+  width: 100%;
+  max-width: 1100px;   /* Ajusta según el ancho de tu imagen Canva */
+  margin: 0 auto;
+  display: block;
+  border-radius: 0px;
+  box-shadow: 0 6px 30px rgb(0, 0, 0);
+  /* Si quieres menos sombra, baja el alpha */
+}
+
+.img-beneficios {
+  border-radius: 0px;
+  box-shadow: 0 6px 32px 0 rgba(30,80,180,0.07), 0 2px 8px rgba(0,0,0,0.04);
+  border: 1.5px solid #000000;
+  max-width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+@media (max-width: 800px) {
+  .img-beneficios {
+    max-width: 97vw;
+    border-radius: 16px;
+  }
+}
+
+.diapositiva-profesionales {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7faff;
+}
+
+
+.img-diapositiva {
+  width: 100vw;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none; /* Puedes dejarlo si deseas sombra */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .diapositiva-profesionales {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.footer-minimal {
+  background-color: #000000;
+  color: #dddddd;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  border-top: 1px solid #1a1a1a;
+}
+
+.footer-minimal strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #021437;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-icon:hover {
+  text-decoration: underline;
+}
+
+.footer-icon img {
+  filter: brightness(90%) contrast(110%);
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.25;
+}
